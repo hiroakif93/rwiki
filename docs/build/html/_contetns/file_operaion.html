@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>ファイル/ディレクトリの操作 &#8212; R wiki  documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=fa44fd50" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=89b800e6" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
+    <script src="../_static/doctools.js?v=888ff710"></script>
+    <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="hiroakif93’s R wiki" href="../index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../index.html" title="hiroakif93’s R wiki"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">R wiki  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">ファイル/ディレクトリの操作</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="id1">
+<h1>ファイル/ディレクトリの操作<a class="headerlink" href="#id1" title="Permalink to this heading">¶</a></h1>
+<section id="id2">
+<h2>ディレクトリに関する操作<a class="headerlink" href="#id2" title="Permalink to this heading">¶</a></h2>
+<section id="setwd">
+<h3><cite>setwd</cite><a class="headerlink" href="#setwd" title="Permalink to this heading">¶</a></h3>
+<p>作業ディレクトリ(working directory)の変更:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Windowsの例. ””内は、自分のフォルダを指定</span>
+<span class="n">setwd</span><span class="p">(</span><span class="s2">&quot;C:/Users/username/Documents&quot;</span><span class="p">)</span>
+
+<span class="c1"># Macの例. ””内は、自分のフォルダを指定</span>
+<span class="n">setqwd</span><span class="p">(</span><span class="s2">&quot;/Users/username/Documents&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="getwd">
+<h3><cite>getwd</cite><a class="headerlink" href="#getwd" title="Permalink to this heading">¶</a></h3>
+<p>現在の作業ディレクトリ(working directory)の確認:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">getwd</span><span class="p">()</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="id3">
+<h2>ファイルに関する操作<a class="headerlink" href="#id3" title="Permalink to this heading">¶</a></h2>
+<section id="read-table">
+<h3>read.table<a class="headerlink" href="#read-table" title="Permalink to this heading">¶</a></h3>
+<p>ファイルの読み込み.
+区切り文字を指定することができる:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># sep=&quot;&quot;で指定した文字を区切りにして、列に分割して読み込む</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">read</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="s2">&quot;data.txt&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;</span><span class="se">\t</span><span class="s2">&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="n">TRUE</span><span class="p">)</span>
+
+<span class="c1"># CSVファイルの読み込み</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">read</span><span class="o">.</span><span class="n">table</span><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="n">TRUE</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="read-csv">
+<h3>read.csv<a class="headerlink" href="#read-csv" title="Permalink to this heading">¶</a></h3>
+<p>read.tableのWrapper関数.
+デフォルトの指定文字がスペースではなくカンマ(,):</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">read</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="n">TRUE</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">ファイル/ディレクトリの操作</a><ul>
+<li><a class="reference internal" href="#id2">ディレクトリに関する操作</a><ul>
+<li><a class="reference internal" href="#setwd"><cite>setwd</cite></a></li>
+<li><a class="reference internal" href="#getwd"><cite>getwd</cite></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id3">ファイルに関する操作</a><ul>
+<li><a class="reference internal" href="#read-table">read.table</a></li>
+<li><a class="reference internal" href="#read-csv">read.csv</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../index.html"
+                          title="previous chapter">hiroakif93’s R wiki</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/_contetns/file_operaion.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../index.html" title="hiroakif93’s R wiki"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">R wiki  documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">ファイル/ディレクトリの操作</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+    &#169; Copyright 2025, hiroakif93.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 7.1.2.
+    </div>
+  </body>
+</html>

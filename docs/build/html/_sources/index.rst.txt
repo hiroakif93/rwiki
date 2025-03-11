@@ -7,14 +7,16 @@ hiroakif93's R wiki
 ==================================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   :caption: 目次:
+
+   _contetns/file_operaion.rst
 
 
-
-Contents
+目次
 ==================
 
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+
