@@ -1,21 +1,21 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>文法 &mdash; R wiki  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=92fd9be5" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
-      <script src="../_static/doctools.js?v=888ff710"></script>
-      <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -45,7 +45,11 @@
               <p class="caption" role="heading"><span class="caption-text">目次:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">文法</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#r">Rの記法</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#r">Rの記法</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">代入</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">オブジェクトからの値の取り出し方</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="object.html">オブジェクト</a></li>
@@ -77,9 +81,74 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>文法<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
+<h1>文法<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="r">
-<h2>Rの記法<a class="headerlink" href="#r" title="Permalink to this heading"></a></h2>
+<h2>Rの記法<a class="headerlink" href="#r" title="Link to this heading"></a></h2>
+<section id="id2">
+<h3>代入<a class="headerlink" href="#id2" title="Link to this heading"></a></h3>
+<p>オブジェクトに値を代入するには、<strong>&lt;-</strong>または<strong>=</strong>を使う.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># 数値型を代入</span>
+<span class="n">x</span> <span class="o">&lt;-</span> <span class="mi">10</span> <span class="c1"># xに10を代入</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="c1"># xを表示</span>
+
+<span class="n">y</span> <span class="o">=</span> <span class="mi">20</span> <span class="c1"># yに20を代入</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">y</span><span class="p">)</span> <span class="c1"># yを表示</span>
+
+<span class="c1"># 数値型のオブジェクトを使った計算結果を代入</span>
+<span class="n">z</span> <span class="o">&lt;-</span> <span class="n">x</span><span class="o">+</span><span class="n">y</span> <span class="c1"># xとyを足した値をzに代入</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">z</span><span class="p">)</span> <span class="c1"># zを表示</span>
+</pre></div>
+</div>
+</section>
+<section id="id3">
+<h3>オブジェクトからの値の取り出し方<a class="headerlink" href="#id3" title="Link to this heading"></a></h3>
+<p>オブジェクトからの値の取り出しかたには、オブジェクトのクラスによって異なる.</p>
+<ul class="simple">
+<li><p>スカラー（ベクトルの長さが1のもの）のオブジェクトの場合、x自体が値を持つ.</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">&lt;-</span> <span class="mi">10</span>
+<span class="n">x</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><dl class="simple">
+<dt>ベクトルのオブジェクトの場合、x[1]のように、カギ括弧内で取り出したい位置（インデックス）を指定して取り出す.</dt><dd><p>ベクトルに名前がついている時は、x[名前]と指定して値を取り出すことも可能.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="c1"># ベクトルを作成</span>
+<span class="n">names</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">&lt;-</span> <span class="n">c</span><span class="p">(</span><span class="s2">&quot;a&quot;</span><span class="p">,</span> <span class="s2">&quot;b&quot;</span><span class="p">,</span> <span class="s2">&quot;c&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">,</span> <span class="s2">&quot;e&quot;</span><span class="p">)</span> <span class="c1"># ベクトルに名前をつける</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="c1"># 1番目の要素を取り出す</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="c1"># 2番目の要素を取り出す</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="c1"># 3番目の要素を取り出す</span>
+
+<span class="n">x</span><span class="p">[</span><span class="s2">&quot;a&quot;</span><span class="p">]</span> <span class="c1"># 名前がaの要素を取り出す</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><dl class="simple">
+<dt>行列・データフレームのオブジェクトの場合、x[1, 1]のように、カギ括弧内で取り出したい位置（インデックス）を指定して取り出す.</dt><dd><p>カギ括弧内の前の数字は行のインデックス、後ろの数字は列のインデックスを表す.
+行名、列名がついている場合は、x[“行名”, “列名”]と指定して値を取り出すことも可能.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">x</span> <span class="o">&lt;-</span> <span class="n">matrix</span><span class="p">(</span><span class="mi">1</span><span class="p">:</span><span class="mi">9</span><span class="p">,</span> <span class="n">nrow</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">ncol</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span> <span class="c1"># 3x3の行列を作成</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="c1"># 1行1列目の要素を取り出す</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="c1"># 2行2列目の要素を取り出す</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span> <span class="c1"># 3行3列目の要素を取り出す</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">]</span> <span class="c1"># 1行目の全ての要素を取り出す</span>
+<span class="n">x</span><span class="p">[</span> <span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="c1"># 2列目の全ての要素を取り出す</span>
+
+<span class="n">y</span> <span class="o">&lt;-</span> <span class="n">data</span><span class="o">.</span><span class="n">frame</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="mi">1</span><span class="p">:</span><span class="mi">3</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="mi">4</span><span class="p">:</span><span class="mi">6</span><span class="p">)</span> <span class="c1"># データフレームを作成</span>
+<span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">1</span><span class="p">]</span> <span class="c1"># 1行1列目の要素を取り出す</span>
+<span class="n">y</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="c1"># 1行2列目の要素を取り出す</span>
+<span class="n">x</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="p">]</span> <span class="c1"># 1行目の全ての要素を取り出す</span>
+<span class="n">x</span><span class="p">[</span> <span class="p">,</span> <span class="mi">2</span><span class="p">]</span> <span class="c1"># 2列目の全ての要素を取り出す</span>
+</pre></div>
+</div>
+</section>
 </section>
 </section>
 

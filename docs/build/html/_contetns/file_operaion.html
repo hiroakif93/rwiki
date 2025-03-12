@@ -1,21 +1,21 @@
 
 
 <!DOCTYPE html>
-<html class="writer-html5" lang="en">
+<html class="writer-html5" lang="en" data-content_root="../">
 <head>
-  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ファイル/ディレクトリの操作 &mdash; R wiki  documentation</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=92fd9be5" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
 
   
       <script src="../_static/jquery.js?v=5d32c60e"></script>
       <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-      <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js?v=b3ba4146"></script>
-      <script src="../_static/doctools.js?v=888ff710"></script>
-      <script src="../_static/sphinx_highlight.js?v=4825356b"></script>
+      <script src="../_static/documentation_options.js?v=5929fcd5"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -85,11 +85,11 @@
            <div itemprop="articleBody">
              
   <section id="id1">
-<h1>ファイル/ディレクトリの操作<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h1>
+<h1>ファイル/ディレクトリの操作<a class="headerlink" href="#id1" title="Link to this heading"></a></h1>
 <section id="id2">
-<h2>ディレクトリに関する操作<a class="headerlink" href="#id2" title="Permalink to this heading"></a></h2>
+<h2>ディレクトリに関する操作<a class="headerlink" href="#id2" title="Link to this heading"></a></h2>
 <section id="setwd">
-<h3><cite>setwd</cite><a class="headerlink" href="#setwd" title="Permalink to this heading"></a></h3>
+<h3><cite>setwd</cite><a class="headerlink" href="#setwd" title="Link to this heading"></a></h3>
 <p>作業ディレクトリ(working directory)の変更:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># Windowsの例. ””内は、自分のフォルダを指定</span>
 <span class="n">setwd</span><span class="p">(</span><span class="s2">&quot;C:/Users/username/Documents&quot;</span><span class="p">)</span>
@@ -100,7 +100,7 @@
 </div>
 </section>
 <section id="getwd">
-<h3><cite>getwd</cite><a class="headerlink" href="#getwd" title="Permalink to this heading"></a></h3>
+<h3><cite>getwd</cite><a class="headerlink" href="#getwd" title="Link to this heading"></a></h3>
 <p>現在の作業ディレクトリ(working directory)の確認:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">getwd</span><span class="p">()</span>
 </pre></div>
@@ -108,9 +108,9 @@
 </section>
 </section>
 <section id="id3">
-<h2>ファイルに関する操作<a class="headerlink" href="#id3" title="Permalink to this heading"></a></h2>
+<h2>ファイルに関する操作<a class="headerlink" href="#id3" title="Link to this heading"></a></h2>
 <section id="read-table">
-<h3>read.table<a class="headerlink" href="#read-table" title="Permalink to this heading"></a></h3>
+<h3>read.table<a class="headerlink" href="#read-table" title="Link to this heading"></a></h3>
 <p>ファイルの読み込み.
 区切り文字を指定することができる:</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="c1"># sep=&quot;&quot;で指定した文字を区切りにして、列に分割して読み込む</span>
@@ -122,7 +122,7 @@
 </div>
 </section>
 <section id="read-csv">
-<h3>read.csv<a class="headerlink" href="#read-csv" title="Permalink to this heading"></a></h3>
+<h3>read.csv<a class="headerlink" href="#read-csv" title="Link to this heading"></a></h3>
 <p>read.tableのWrapper関数.
 デフォルトの指定文字がスペースではなくカンマ(,):</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">read</span><span class="o">.</span><span class="n">csv</span><span class="p">(</span><span class="s2">&quot;data.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="n">header</span><span class="o">=</span><span class="n">TRUE</span><span class="p">)</span>
