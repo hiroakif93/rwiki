@@ -10,13 +10,8 @@ hiroakif93's R wiki
    :maxdepth: 1
    :caption: 目次:
 
-   _contetns/file_operaion.rst
+   _contetns/grammer.rst
+   _contetns/object.rst 
+   _contetns/file_operaion.rst     
 
-
-目次
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
 
