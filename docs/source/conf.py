@@ -27,8 +27,8 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 
-[project.optional-dependencies]
-docs = [
-    "sphinx",
-    "sphinx_rtd_theme",
-]
+# [project.optional-dependencies]
+# docs = [
+#     "sphinx",
+#     "sphinx_rtd_theme",
+# ]
