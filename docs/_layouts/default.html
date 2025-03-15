@@ -1,0 +1,34 @@
+<!doctype html>
+
+<html>
+  <!-- Header: HTML properties -->
+  <head>
+    <meta charset="utf-8">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    {% feed_meta %}
+    {% seo %}
+  </head>
+
+  <!-- Main contents -->
+  <body>
+
+    <!--  Navbar  -->
+    {% include navbar.html %}
+    {{ content }}
+  </body>
+
+  <aside id="R-sidebar" class="default-animation">
+    <h1>R Wiki</h1>
+  </aside>
+  
+  <!-- ### Footer: HTML properties ### -->
+  <footer>
+    <p>
+      <small>
+        <a href="https://github.com/hiroakif93/R-wiki">R Wiki</a>
+      </small>
+    </p>
+  </footer>
+
+</html>

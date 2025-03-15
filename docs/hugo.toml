@@ -1,4 +1,0 @@
-baseURL = "https://rwiki-hiroakif93.github.io/"
-languageCode = "en-us"
-title = "R Wiki by hiroakif93"
-theme = 'hugo-theme-relearn-main'
