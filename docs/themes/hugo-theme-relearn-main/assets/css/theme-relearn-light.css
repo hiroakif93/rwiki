@@ -4,7 +4,7 @@
   --SECONDARY-color: rgba(72, 106, 201, 1); /* brand secondary color */
   --ACCENT-color: rgb(255, 102, 78); /* brand accent color, used for search highlights */
 
-  --MAIN-TEXT-color: rgb(0, 77, 54); /* text color of content and h1 titles */
+  --MAIN-TEXT-color: rgb(1, 50, 35); /* text color of content and h1 titles */
   --MAIN-LINK-HOVER-color: rgba(32, 40, 145, 1); /* hovered link color of content */
   --MAIN-BG-color: rgba(255, 255, 255, 1); /* background color of content */
   --MAIN-TITLES-TEXT-color: rgba(16, 16, 16, 1); /* text color of h2-h6 titles and transparent box titles */
@@ -31,7 +31,7 @@
   --MENU-SEARCH-BG-color: rgba(50, 50, 50, 1); /* background color of search box */
   --MENU-SEARCH-BORDER-color: rgba(224, 224, 224, 1); /* border color of search box */
 
-  --MENU-SECTIONS-BG-color: #0a7965df; /* background of the menu; this is NOT just a color value but can be a complete CSS background definition including gradients, etc. */
+  --MENU-SECTIONS-BG-color: #012820df; /* background of the menu; this is NOT just a color value but can be a complete CSS background definition including gradients, etc. */
   --MENU-SECTIONS-ACTIVE-BG-color: rgba(0, 0, 0, 0.166); /* background color of the active menu section */
   --MENU-SECTIONS-LINK-color: rgba(186, 186, 186, 1); /* link color of menu topics */
   --MENU-SECTIONS-LINK-HOVER-color: rgba(255, 255, 255, 1); /* hovered link color of menu topics */

@@ -5,20 +5,42 @@
     <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0">
     <meta name="generator" content="Hugo 0.134.2">
     <meta name="generator" content="Relearn 7.5.0+9a020e7eadb7d8203f5b01b18756c72d94773ec9">
-    <meta name="description" content="">
+    <meta name="description" content="ディレクトリに関する操作 setwd 作業ディレクトリ(working directory)の変更::
+# Windowsの例. ””内は、自分のフォルダを指定 setwd(&#34;C:/Users/username/Documents&#34;) # Macの例. ””内は、自分のフォルダを指定 setqwd(&#34;/Users/username/Documents&#34;) getwd 現在の作業ディレクトリ(working directory)の確認::
+getwd() ファイルに関する操作 read.table ファイルの読み込み. 区切り文字を指定することができる::
+# sep=&#34;&#34;で指定した文字を区切りにして、列に分割して読み込む df = read.table(&#34;data.txt&#34;, sep=&#34;\t&#34;, header=TRUE) # CSVファイルの読み込み df = read.table(&#34;data.csv&#34;, sep=&#34;,&#34;, header=TRUE) read.csv read.tableのWrapper関数. デフォルトの指定文字がスペースではなくカンマ(,)::
+df = read.csv(&#34;data.csv&#34;, sep=&#34;,&#34;, header=TRUE)">
     <meta name="author" content="">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Basics :: R Wiki by hiroakif93">
-    <meta property="og:url" content="http://localhost:1313/basic/index.html">
+    <meta name="twitter:title" content="ファイル/ディレクトリの操作 :: R Wiki by hiroakif93">
+    <meta name="twitter:description" content="ディレクトリに関する操作 setwd 作業ディレクトリ(working directory)の変更::
+# Windowsの例. ””内は、自分のフォルダを指定 setwd(&#34;C:/Users/username/Documents&#34;) # Macの例. ””内は、自分のフォルダを指定 setqwd(&#34;/Users/username/Documents&#34;) getwd 現在の作業ディレクトリ(working directory)の確認::
+getwd() ファイルに関する操作 read.table ファイルの読み込み. 区切り文字を指定することができる::
+# sep=&#34;&#34;で指定した文字を区切りにして、列に分割して読み込む df = read.table(&#34;data.txt&#34;, sep=&#34;\t&#34;, header=TRUE) # CSVファイルの読み込み df = read.table(&#34;data.csv&#34;, sep=&#34;,&#34;, header=TRUE) read.csv read.tableのWrapper関数. デフォルトの指定文字がスペースではなくカンマ(,)::
+df = read.csv(&#34;data.csv&#34;, sep=&#34;,&#34;, header=TRUE)">
+    <meta property="og:url" content="http://localhost:1313/basic/file_operaion/index.html">
     <meta property="og:site_name" content="R Wiki by hiroakif93">
-    <meta property="og:title" content="Basics :: R Wiki by hiroakif93">
+    <meta property="og:title" content="ファイル/ディレクトリの操作 :: R Wiki by hiroakif93">
+    <meta property="og:description" content="ディレクトリに関する操作 setwd 作業ディレクトリ(working directory)の変更::
+# Windowsの例. ””内は、自分のフォルダを指定 setwd(&#34;C:/Users/username/Documents&#34;) # Macの例. ””内は、自分のフォルダを指定 setqwd(&#34;/Users/username/Documents&#34;) getwd 現在の作業ディレクトリ(working directory)の確認::
+getwd() ファイルに関する操作 read.table ファイルの読み込み. 区切り文字を指定することができる::
+# sep=&#34;&#34;で指定した文字を区切りにして、列に分割して読み込む df = read.table(&#34;data.txt&#34;, sep=&#34;\t&#34;, header=TRUE) # CSVファイルの読み込み df = read.table(&#34;data.csv&#34;, sep=&#34;,&#34;, header=TRUE) read.csv read.tableのWrapper関数. デフォルトの指定文字がスペースではなくカンマ(,)::
+df = read.csv(&#34;data.csv&#34;, sep=&#34;,&#34;, header=TRUE)">
     <meta property="og:locale" content="en_us">
-    <meta property="og:type" content="website">
-    <meta itemprop="name" content="Basics :: R Wiki by hiroakif93">
+    <meta property="og:type" content="article">
+    <meta property="article:section" content="Basics">
+    <meta property="article:published_time" content="2025-03-15T11:33:22+09:00">
+    <meta property="article:modified_time" content="2025-03-15T11:33:22+09:00">
+    <meta itemprop="name" content="ファイル/ディレクトリの操作 :: R Wiki by hiroakif93">
+    <meta itemprop="description" content="ディレクトリに関する操作 setwd 作業ディレクトリ(working directory)の変更::
+# Windowsの例. ””内は、自分のフォルダを指定 setwd(&#34;C:/Users/username/Documents&#34;) # Macの例. ””内は、自分のフォルダを指定 setqwd(&#34;/Users/username/Documents&#34;) getwd 現在の作業ディレクトリ(working directory)の確認::
+getwd() ファイルに関する操作 read.table ファイルの読み込み. 区切り文字を指定することができる::
+# sep=&#34;&#34;で指定した文字を区切りにして、列に分割して読み込む df = read.table(&#34;data.txt&#34;, sep=&#34;\t&#34;, header=TRUE) # CSVファイルの読み込み df = read.table(&#34;data.csv&#34;, sep=&#34;,&#34;, header=TRUE) read.csv read.tableのWrapper関数. デフォルトの指定文字がスペースではなくカンマ(,)::
+df = read.csv(&#34;data.csv&#34;, sep=&#34;,&#34;, header=TRUE)">
     <meta itemprop="datePublished" content="2025-03-15T11:33:22+09:00">
     <meta itemprop="dateModified" content="2025-03-15T11:33:22+09:00">
-    <title>Basics :: R Wiki by hiroakif93</title>
-    <link href="/basic/index.xml" rel="alternate" type="application/rss+xml" title="Basics :: R Wiki by hiroakif93">
+    <meta itemprop="wordCount" content="42">
+    <title>ファイル/ディレクトリの操作 :: R Wiki by hiroakif93</title>
     <link href="/fonts/fontawesome/css/fontawesome-all.min.css?1742014862" rel="stylesheet" media="print" onload="this.media='all';this.onload=null;"><noscript><link href="/fonts/fontawesome/css/fontawesome-all.min.css?1742014862" rel="stylesheet"></noscript>
     <link href="/css/perfect-scrollbar/perfect-scrollbar.min.css?1742014862" rel="stylesheet">
     <link href="/css/theme.css?1742014862" rel="stylesheet">
@@ -34,8 +56,8 @@
       window.relearn = window.relearn || {};
       // configuration
       window.relearn.min = ``;
-      window.relearn.relBasePath='..';
-      window.relearn.relBaseUri='..';
+      window.relearn.relBasePath='..\/..';
+      window.relearn.relBaseUri='..\/..';
       window.relearn.absBaseUri='http:\/\/localhost:1313';
       window.relearn.contentLangs=['en'];
       window.relearn.index_js_url="/searchindex.en.js?1742014862";
@@ -83,7 +105,7 @@
       window.T_N_results_found = `{1} results found for "{0}"`;
     </script>
   </head>
-  <body class="mobile-support html" data-url="/basic/index.html">
+  <body class="mobile-support html" data-url="/basic/file_operaion/index.html">
     <div id="R-body" class="default-animation">
       <div id="R-body-overlay"></div>
       <nav id="R-topbar">
@@ -94,19 +116,36 @@
             </div>
             <div class="topbar-button topbar-button-toc" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="Table of Contents (CTRL&#43;ALT&#43;t)"><i class="fa-fw fas fa-list-alt"></i></button>
               <div class="topbar-content">
-                <div class="topbar-content-wrapper"> 
+                <div class="topbar-content-wrapper">
+<nav class="TableOfContents">
+  <ul>
+    <li><a href="#ディレクトリに関する操作">ディレクトリに関する操作</a>
+      <ul>
+        <li><a href="#setwd"><code>setwd</code></a></li>
+        <li><a href="#getwd"><code>getwd</code></a></li>
+      </ul>
+    </li>
+    <li><a href="#ファイルに関する操作">ファイルに関する操作</a>
+      <ul>
+        <li><a href="#readtable">read.table</a></li>
+        <li><a href="#readcsv">read.csv</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
                 </div>
               </div>
             </div>
           </div>
           <ol class="topbar-breadcrumbs breadcrumbs highlightable" itemscope itemtype="http://schema.org/BreadcrumbList">
             <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/index.html"><span itemprop="name">R Wiki by hiroakif93</span></a><meta itemprop="position" content="1">&nbsp;>&nbsp;</li>
-            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">Basics</span><meta itemprop="position" content="2"></li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><a itemprop="item" href="/basic/index.html"><span itemprop="name">Basics</span></a><meta itemprop="position" content="2">&nbsp;>&nbsp;</li>
+            <li itemscope itemtype="https://schema.org/ListItem" itemprop="itemListElement" class=""><span itemprop="name">ファイル/ディレクトリの操作</span><meta itemprop="position" content="3"></li>
           </ol>
           <div class="topbar-area topbar-area-end" data-area="end">
-            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/index.html" title="R Wiki by hiroakif93 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
+            <div class="topbar-button topbar-button-prev" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/basic/grammer/index.html" title="Rの記法 (🡐)"><i class="fa-fw fas fa-chevron-left"></i></a>
             </div>
-            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><a class="topbar-control" href="/basic/object/index.html" title="Object (🡒)"><i class="fa-fw fas fa-chevron-right"></i></a>
+            <div class="topbar-button topbar-button-next" data-content-empty="disable" data-width-s="show" data-width-m="show" data-width-l="show"><span class="topbar-control"><i class="fa-fw fas fa-chevron-right"></i></span>
             </div>
             <div class="topbar-button topbar-button-more" data-content-empty="hide" data-width-s="show" data-width-m="show" data-width-l="show"><button class="topbar-control" onclick="toggleTopbarFlyout(this)" type="button" title="More"><i class="fa-fw fas fa-ellipsis-v"></i></button>
               <div class="topbar-content">
@@ -126,8 +165,36 @@
   <header class="headline">
   </header>
 
-<h1 id="basics">Basics</h1>
+<h1 id="ファイルディレクトリの操作">ファイル/ディレクトリの操作</h1>
 
+<h2 id="ディレクトリに関する操作">ディレクトリに関する操作</h2>
+<h3 id="setwd"><code>setwd</code></h3>
+<p>作業ディレクトリ(working directory)の変更::</p>
+<pre><code># Windowsの例. ””内は、自分のフォルダを指定
+setwd(&quot;C:/Users/username/Documents&quot;)    
+
+# Macの例. ””内は、自分のフォルダを指定
+setqwd(&quot;/Users/username/Documents&quot;)
+</code></pre>
+<h3 id="getwd"><code>getwd</code></h3>
+<p>現在の作業ディレクトリ(working directory)の確認::</p>
+<pre><code>getwd()    
+</code></pre>
+<h2 id="ファイルに関する操作">ファイルに関する操作</h2>
+<h3 id="readtable">read.table</h3>
+<p>ファイルの読み込み.
+区切り文字を指定することができる::</p>
+<pre><code># sep=&quot;&quot;で指定した文字を区切りにして、列に分割して読み込む
+df = read.table(&quot;data.txt&quot;, sep=&quot;\t&quot;, header=TRUE)
+
+# CSVファイルの読み込み
+df = read.table(&quot;data.csv&quot;, sep=&quot;,&quot;, header=TRUE)
+</code></pre>
+<h3 id="readcsv">read.csv</h3>
+<p>read.tableのWrapper関数.
+デフォルトの指定文字がスペースではなくカンマ(,)::</p>
+<pre><code>df = read.csv(&quot;data.csv&quot;, sep=&quot;,&quot;, header=TRUE)
+</code></pre>
 
   <footer class="footline">
               <i class='fa-fw fas fa-calendar'></i> Mar 15, 2025
@@ -164,10 +231,10 @@
       <div id="R-content-wrapper" class="highlightable">
         <div id="R-shortcutmenu-home" class="R-sidebarmenu">
           <ul class="enlarge morespace collapsible-menu">
-            <li class="active parent " data-nav-id="/basic/index.html"><a class="padding" href="/basic/index.html">Basics</a><ul id="R-subsections-37ea9c3f12f23f09808aa1f3523ea915" class="collapsible-menu">
+            <li class="parent " data-nav-id="/basic/index.html"><a class="padding" href="/basic/index.html">Basics</a><ul id="R-subsections-37ea9c3f12f23f09808aa1f3523ea915" class="collapsible-menu">
             <li class="" data-nav-id="/basic/object/index.html"><a class="padding" href="/basic/object/index.html">Object</a></li>
             <li class="" data-nav-id="/basic/grammer/index.html"><a class="padding" href="/basic/grammer/index.html">Rの記法</a></li>
-            <li class="" data-nav-id="/basic/file_operaion/index.html"><a class="padding" href="/basic/file_operaion/index.html">ファイル/ディレクトリの操作</a></li></ul></li>
+            <li class="active " data-nav-id="/basic/file_operaion/index.html"><a class="padding" href="/basic/file_operaion/index.html">ファイル/ディレクトリの操作</a></li></ul></li>
           </ul>
         </div>
         <div class="padding footermargin footerLangSwitch footerVariantSwitch footerVisitedLinks footerFooter showFooter"></div>
@@ -182,7 +249,7 @@
                   <div class="control-style">
                     <label class="a11y-only" for="R-select-language">Language</label>
                     <select id="R-select-language" onchange="location = this.querySelector( `#R-select-language-${this.value}` ).dataset.url;">
-                      <option id="R-select-language-en" value="en" data-url="/basic/index.html" lang="en-us" selected></option>
+                      <option id="R-select-language-en" value="en" data-url="/basic/file_operaion/index.html" lang="en-us" selected></option>
                     </select>
                   </div>
                   <div class="clear"></div>
