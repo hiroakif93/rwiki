@@ -1,13 +1,29 @@
-h1 {
-  color: rgb(0, 77, 54);
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
+.layout {
+  display: grid;
+  grid-template-areas: "search-bar  header" "sidebar content" "footer   footer";
+  grid-template-columns: 220px 1fr;
+  grid-template-rows: 1fr 1fr 50px;
+  height: 100vh;
 }
-
-.current {
-  color: green;
+.layout__header {
+  grid-area: header;
+  background-color: rgba(180, 234, 88, 0.2);
+}
+.layout__search-bar {
+  grid-area: search-bar;
+  background-color: rgba(180, 234, 88, 0.2);
+}
+.layout__sidebar {
+  grid-area: nav;
+  background-color: rgba(88, 234, 222, 0.2);
+}
+.layout__content {
+  grid-area: main;
+  background-color: rgba(88, 234, 222, 0.7);
+}
+.layout__footer {
+  grid-area: footer;
+  background-color: rgba(234, 88, 88, 0.2);
 }
 
 .sidebar {
@@ -16,15 +32,18 @@ h1 {
 .sidebar h1 {
   color: rgb(0, 77, 54);
   text-align: center;
-  margin-bottom: 5rem;
   font-weight: bold;
+  margin-top: 1rem;
+}
+.sidebar .search-bar {
+  margin-bottom: 3rem;
   border-bottom: 1px solid rgb(0, 77, 54);
 }
-.sidebar a {
-  color: rgb(0, 77, 54);
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: bold;
+.sidebar input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -1,12 +1,31 @@
-h1 {
-  color: rgb(0, 77, 54);
-  font-family: sans-serif;
-  line-height: 1.5;
-  margin: 1rem;
-  max-width: 768px;
-}
+.layout {
+  display: grid;
+  grid-template-areas: 
+      "search-bar  header"
+      "sidebar content"
+      "footer   footer";
+  grid-template-columns: 220px 1fr;  // サイドバーを固定、コンテンツを可変
+  grid-template-rows: 1fr 1fr 50px; // ヘッダー、コンテンツ、フッターの高さ
+  height: 100vh;
 
-.current {
-    color: green;
+  &__header {
+    grid-area: header;
+    background-color: rgba(180, 234, 88, 0.2);
   }
-
+  &__search-bar {
+    grid-area: search-bar;
+    background-color: rgba(180, 234, 88, 0.2);
+  }
+  &__sidebar {
+    grid-area: nav;
+    background-color: rgba(88, 234, 222, 0.2);
+  }
+  &__content {
+    grid-area: main;
+    background-color: rgba(88, 234, 222, 0.7);
+  }
+  &__footer {
+    grid-area: footer;
+    background-color: rgba(234, 88, 88, 0.2);
+  }
+}
