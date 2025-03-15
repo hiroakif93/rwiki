@@ -1,1 +1,30 @@
-@import "main";
+h1 {
+  color: rgb(0, 77, 54);
+  font-family: sans-serif;
+  line-height: 1.5;
+  margin: 1rem;
+  max-width: 768px;
+}
+
+.current {
+  color: green;
+}
+
+.sidebar {
+  background-color: rgba(195, 218, 213, 0.831372549);
+}
+.sidebar h1 {
+  color: rgb(0, 77, 54);
+  text-align: center;
+  margin-bottom: 5rem;
+  font-weight: bold;
+  border-bottom: 1px solid rgb(0, 77, 54);
+}
+.sidebar a {
+  color: rgb(0, 77, 54);
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=styles.css.map */
