@@ -1,5 +1,8 @@
 .sidebar {
     background-color: #c3dad5d4; 
+    padding-bottom: 3rem;
+    padding-left: 1rem;
+    padding-right: 2rem;
 
     h1 {
       color: rgb(0, 77, 54); 
@@ -8,16 +11,5 @@
       margin-top: 1rem;   
     }
 
-    .search-bar {
-      margin-bottom: 3rem;
-      border-bottom: 1px solid rgb(0, 77, 54);
-    }
-  
-    input {
-      width: 100%; 
-      padding: 0.5rem;
-      border: 1px solid #ccc; 
-      border-radius: 5px; 
-    }
   }
   

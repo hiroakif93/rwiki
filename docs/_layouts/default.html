@@ -6,25 +6,26 @@
     <meta charset="utf-8">
     <title>{{ page.title }}</title>
     <link rel="stylesheet" href="/assets/css/styles.css">
-
+    <script src="{{ '/assets/js/sidebar.js' | relative_url }}"></script>
     {% include bootstrap.html %}    
+    {% include font.html %}
     {% feed_meta %}
     {% seo %}
   </head>
 
   <!-- Main contents -->
   <body>
-  <div class="layout">
-    
-    <!--  Header  -->
-    <header class="header">
-      <h1>{{ site.data.title.name }}</h1>
-    </header>
-
+  <main class="layout">
+  
     <aside class="search-bar">
-      <h1>{{ site.data.title.name }}</h1>
+      <h1>{{ site.data.title.name }}</h1> <h3> by hiraokif93</h3>
       {% include searchbar.html %}
     </aside>
+
+    <!--  Header  -->
+    <header class="header">
+      <h1>Home</h1>
+    </header>
 
     <!--  Navbar  -->
     <nav class="sidebar"> 
@@ -47,8 +48,8 @@
     </p>
   </footer>
 
-  </div>
+  </main>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+</body>
 </html>

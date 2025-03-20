@@ -1,4 +1,6 @@
 ---
 ---
-@import "main";
-@import "sidebar";
+@use "main";
+@use "layout";
+@use "sidebar";
+@use "search-bar";

@@ -1,4 +1,12 @@
 - name: Home
   link: /
-- name: About
-  link: /about.html
+- name: 基礎
+  submenu:
+    - subname: 文法
+      link: /about.html
+    - subname: オブジェクト
+      link: /about.html
+    - subname: データの操作
+      link: /about.html
+    - subname: 可視化
+      link: /about.html
