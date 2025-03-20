@@ -11,6 +11,7 @@ baseurl: "/"
 
 include:
   - _contents
+  - _sass
 
 affiliation:
   - Graduate School of Biostudies,
