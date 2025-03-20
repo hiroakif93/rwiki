@@ -3,10 +3,16 @@
 - name: 基礎
   submenu:
     - subname: 文法
-      link: /about.html
+      link: /_contents/grammer.html
     - subname: オブジェクト
-      link: /about.html
+      link: /_contents/object.html
     - subname: データの操作
-      link: /about.html
+      link: /_contents/handling.html
     - subname: 可視化
-      link: /about.html
+      link: /_contents/visualize.html
+- name: ggplot2
+  submenu:
+    - subname: 基礎
+      link: /_contents/ggplot2.html
+    - subname: グラフの種類
+      link: /_contents/ggplot2.html
