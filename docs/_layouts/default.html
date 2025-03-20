@@ -18,38 +18,38 @@
 
   <!-- Main contents -->
   <body>
-  <main class="layout">
+  <div class="layout">
   
+    <!--  Header  -->
+    {% include header.html %}
+
+    <!--  Search bar  -->
     <aside class="search-bar">
       <h1>{{ site.data.title.name }}</h1> <h3> by hiraokif93</h3>
       {% include searchbar.html %}
     </aside>
-
-    <!--  Header  -->
-    <header class="header">
-      <h1>Home</h1>
-    </header>
-
+    
     <!--  Navbar  -->
     <nav class="sidebar"> 
       {% include sidebar.html %}       
     </nav>
-
+    
     <!--  Markdown parts  -->
     <main class="content">
       {{ content }}
     </main>
-  
-  <!-- ### Footer: HTML properties ### -->
-  <footer class="footer">
-    <p>
-      <small>
-        <a href="https://github.com/hiroakif93/R-wiki">R Wiki</a>
-      </small>
-    </p>
-  </footer>
 
-  </main>
+  
+    <!-- ### Footer: HTML properties ### -->
+    <footer class="footer">
+      <p>
+        <small>
+          <a href="https://github.com/hiroakif93/R-wiki">R Wiki</a>
+        </small>
+      </p>
+    </footer>
+
+  </div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>

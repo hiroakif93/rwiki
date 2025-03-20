@@ -1,16 +1,16 @@
 .search-bar {
-    padding-bottom: 3rem;
+    padding-bottom: 0.2rem;
     padding-left: 1rem;
     padding-right: 2rem;
-    border-bottom: 1px solid rgb(4, 165, 116);
-    border-width: 5px;
-    background-color: #c3dad5d4;
-    color: rgb(0, 77, 54);
+    border-bottom: 1px solid var(--border-color);
+    border-width: var(--border-width);
+    background-color: var(--sub-color);
+    color: var(--main-color);
 }
 
 input {
     width: 100%; 
-    padding: 0.5rem;
+    padding: 0.1rem;
     border: 1px solid #ccc; 
     border-radius: 5px; 
 }

@@ -1,11 +1,11 @@
 .sidebar {
-    background-color: rgb(0, 62, 43); 
+    background-color: var(--main-color); 
     padding-bottom: 3rem;
     padding-left: 0.5rem;
     padding-right: 2rem;
 
     h1 {
-      color: rgb(0, 62, 43); 
+      color: var(--main-color); 
       text-align: center; 
       font-weight: bold;   
       margin-top: 1rem;   
@@ -14,9 +14,9 @@
 }
 
 ul.dropdown {
-
+  
   li {
-    width: 125px;          /* メニュー項目の横幅(125px) */
+    width: 150px;          
     display: inline-block; /* ★横並びに配置する */
     list-style-type: none; /* ★リストの先頭記号を消す */
     position: relative;
@@ -28,20 +28,19 @@ ul.dropdown {
     line-height: 40px;         
     text-decoration: none;     
     font-weight: bold;         
-    border-radius: 5px;
+    border-radius: 2px;
     padding: 0.5rem;
   }
 
   ul {
-    background-color: rgb(80, 145, 125); 
     margin: 0px;        
     padding: 0px;       
     display: none;      
     position: relative; 
-    border-color: rgb(138, 147, 144);
 
     a {
-      background-color: rgb(80, 145, 125); 
+      padding-left: 25px;
+      padding-right: 25px;
     }
   }
 

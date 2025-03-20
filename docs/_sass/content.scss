@@ -1,0 +1,10 @@
+.content {
+    background-color: var(--background-color);
+    padding: 1rem;
+
+    h1, h2{
+        color: var(--main-color);
+    }
+
+    border-left: var(--border-width) solid var(--main-color);
+}
