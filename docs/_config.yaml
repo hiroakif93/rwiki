@@ -8,3 +8,11 @@ sass:
 
 url: "https://hiroakif93.github.io/rwiki"
 baseurl: "/"
+
+include:
+  - _contents
+
+affiliation:
+  - Graduate School of Biostudies,
+  - Center for Living Systems Information Science (CeLiSIS),
+  - Kyoto University.
