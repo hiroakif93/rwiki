@@ -4,6 +4,7 @@ plugins:
   - jekyll-seo-tag
 
 sass:
+  sass_dir: _sass
   style: compressed
 
 url: "https://hiroakif93.github.io/rwiki"
@@ -11,7 +12,6 @@ baseurl: "/"
 
 include:
   - _contents
-  - _sass
 
 affiliation:
   - Graduate School of Biostudies,

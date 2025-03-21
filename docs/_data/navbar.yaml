@@ -2,10 +2,10 @@
   link: /
 - name: 基礎
   submenu:
-    - subname: 文法
-      link: /_contents/grammer.html
     - subname: オブジェクト
       link: /_contents/object.html
+    - subname: 文法
+      link: /_contents/grammer.html    
     - subname: データの操作
       link: /_contents/handling.html
     - subname: 可視化
