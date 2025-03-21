@@ -1,10 +1,10 @@
 ---
 ---
-@use "header";
-@use "layout";
-@use "sidebar";
-@use "search-bar";
-@use "content";
-@use "footer";
-@use "global_var";
-@use "custom";
+@import "header";
+@import "layout";
+@import "sidebar";
+@import "search-bar";
+@import "content";
+@import "footer";
+@import "global_var";
+@import "custom";
